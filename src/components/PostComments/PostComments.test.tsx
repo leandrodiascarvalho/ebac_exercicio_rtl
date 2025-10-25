@@ -23,3 +23,11 @@ describe('Teste para o componente PostComment', () => {
         expect(screen.getByTestId('comment-item-1')).toHaveTextContent('Segundo comentário');
     });
 });
+
+module.exports = {
+  transform: {
+    '^.+\\.(ts|tsx)$': 'babel-jest',
+  },
+  testEnvironment: 'jsdom',
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
+};
